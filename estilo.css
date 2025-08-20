@@ -1,0 +1,18 @@
+/* CSS Externo */
+
+body {
+    background: #1b1b1b; /* cor fundo */
+    color: #e9e9e9; /* cor TEXTOS */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a {
+   color: #e9e9e9;
+   text-decoration: none;
+}
+
+ul {
+    list-style: none;  /* Estilo de Lista */
+}
+
+
