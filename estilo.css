@@ -15,4 +15,25 @@ ul {
     list-style: none;  /* Estilo de Lista */
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: red;
+    border-bottom: 5px solid #fff;
+}
+
+.menu-desktop {
+    background: blue;
+    display: none;
+    /* esconde o menu desktop */
+}
+
+/* Medidas Responsivas */
+@media (min-width: 768px) {
+    .menu-desktop {
+        display: flex;
+    }
+}
 
