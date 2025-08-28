@@ -6,16 +6,25 @@
 :root[data-theme='dark'] {
     --cor-fundo: #1b1b1b;
     --cor-texto: #e9e9e9;
+    --menu-link: rgb(100, 246, 246);
 }
 
+:root[data-theme='light'] {
+    --cor-fundo: #e9e9e9;
+    --cor-texto: #1b1b1b;
+    --menu-link: rgb(26, 66, 66);
+}
+
+
+
 body {
-    background: ; /* cor fundo */
-    color: ; /* cor TEXTOS */
+    background: var(--cor-fundo); /* cor fundo */
+    color: var(--cor-texto); /* cor TEXTOS */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 a {
-   color: #e9e9e9;
+   color: var(--menu-link);
    text-decoration: none;
 }
 
@@ -28,12 +37,12 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background: red;
+    background: var(--cor-fundo);
     border-bottom: 5px solid #fff;
 }
 
 .menu-desktop {
-    background: blue;
+    background: ;
     display: none;
     /* esconde o menu desktop */
 }
