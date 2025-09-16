@@ -137,11 +137,16 @@ botao menu mobile  ----- */
     font-size: 1rem;
 }
 
+.logo {
+    width: 3.25rem; /* comprimento */
+    height: auto; /* altura */
+}
 
-
-
-
-
+.header-toggle {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 
 
 /* Medidas Responsivas */
@@ -149,12 +154,12 @@ botao menu mobile  ----- */
 
     .menu-desktop {
         display: flex;
-        min-width: 30%;
+        min-width: 30%; /* alinhar o logo */
     }
     .btn-menu-mobile {
         display: none;
     }
     .header-toggle {
-        min-width: 30%;
+        min-width: 30%; /* alinhar o logo */
     }
 }
