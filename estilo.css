@@ -21,6 +21,20 @@
  
 }
 
+/* Inverter Cor LOGO = Filtro */
+html[data-theme='light'] .logo {
+    filter: invert(1);
+}
+
+
+
+/* Reset CSS = Padronizar */
+/* Seletor Universal */
+* {
+   margin: 0;
+   padding: 0;
+}
+
 
 
 body {
@@ -44,7 +58,9 @@ header {
     align-items: center;
     width: 100%;
     background: var(--cor-fundo);
-    border-bottom: 5px solid var(--cor-borda);
+    border-bottom: 2px solid var(--cor-borda);
+    position: fixed; /* Voltar */
+    z-index: 9999; /* Camadas */
 }
 
 .menu-desktop {
