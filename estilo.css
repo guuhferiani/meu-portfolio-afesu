@@ -168,6 +168,7 @@ botao menu mobile  ----- */
     padding: 4.5rem 1rem;
     display: flex;
     flex-direction: column;
+    gap: 1.5rem;
 }
 .main-content {
     display: flex;
@@ -178,6 +179,68 @@ botao menu mobile  ----- */
 h1 {
     font-size: 2.5rem;
 }
+
+.video iframe {
+    aspect-ratio: 16/9;
+}
+
+#home, 
+.projetos,
+.sobre, 
+.contato {
+    padding: 2.5rem 1rem;
+}
+
+.descricao-video {
+    display: flex;
+    flex-direction: column;
+    background: #343739;
+    padding: 6.25rem 1rem 2rem;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: -6.5rem;
+}
+
+.descricao-video h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: -2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* letter-spacing: ; */
+}
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.projetos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.projeto-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.img-card {
+    width: 100%;
+    border-radius: .5rem;
+}
+
+.img-card2 {
+    width: 100%;
+    border-radius: .5rem;
+}
+
+
+
+
+
+
 
 
 /* Medidas Responsivas */
@@ -204,7 +267,9 @@ h1 {
         font-size: 5rem;
     }
 
-    #home {
+    #home, 
+    .projetos,
+    .sobre {
         padding: 8rem 6rem 4rem 6rem;
     }
     
@@ -215,10 +280,30 @@ h1 {
     }
 } /* FIM min 768px */
 
+@media (min-width: 992px) {
+    .projeto-card {
+        flex-direction: row;
+    }
+    .img-card {
+        width: 55%;
+                
+    }
+    .img-card2 {
+        width: 30%;
+    }
+}
+
 @media (min-width: 1400px) {
     h1 {
       font-size: 6.5rem;  
     }
+
+    .descricao-video,
+    .projetos,
+    .sobre {
+        padding: 10rem 15rem 4rem;
+    }
+
 }
 
 
