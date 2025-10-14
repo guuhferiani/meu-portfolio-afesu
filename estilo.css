@@ -231,10 +231,24 @@ h1 {
     border-radius: .5rem;
 }
 
-.img-card2 {
-    width: 100%;
-    border-radius: .5rem;
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
 }
+
+.card-title {
+    color: ; /* Cor do Texto */
+    font-size: ; /* Tamanho texto */
+    font-weight: ; /* largura das letras */
+    font-family: ; /* Estilo das fontes */
+}
+
+
+
+
 
 
 
@@ -285,12 +299,16 @@ h1 {
         flex-direction: row;
     }
     .img-card {
-        width: 55%;
-                
+        /* Tamanho das Fotos */
+        width: 55%;  
     }
-    .img-card2 {
-        width: 30%;
+    .reverse-card {
+        /* Espelhar */
+        flex-direction: row-reverse;
     }
+
+    
+
 }
 
 @media (min-width: 1400px) {
