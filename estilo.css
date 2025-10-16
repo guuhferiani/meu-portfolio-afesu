@@ -1,3 +1,6 @@
+/* Google Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* CSS Externo */
 
 /* Definir as cores Tema Dark */
@@ -9,8 +12,9 @@
     --menu-link: #e9e9e9;
 
     --cor-borda: #e9e9e9;
-    
+
 }
+
 /* Fundo Branco */
 :root[data-theme='light'] {
     --cor-fundo: #e9e9e9;
@@ -18,7 +22,7 @@
     --menu-link: #1b1b1b;
 
     --cor-borda: #1b1b1b;
- 
+
 }
 
 /* Inverter Cor LOGO = Filtro */
@@ -31,24 +35,27 @@ html[data-theme='light'] .logo {
 /* Reset CSS = Padronizar */
 /* Seletor Universal */
 * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background: var(--cor-fundo); /* cor fundo */
-    color: var(--cor-texto); /* cor TEXTOS */
+    background: var(--cor-fundo);
+    /* cor fundo */
+    color: var(--cor-texto);
+    /* cor TEXTOS */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 a {
-   color: var(--menu-link);
-   text-decoration: none;
+    color: var(--menu-link);
+    text-decoration: none;
 }
 
 ul {
-    list-style: none;  /* Estilo de Lista */
+    list-style: none;
+    /* Estilo de Lista */
 }
 
 header {
@@ -58,8 +65,10 @@ header {
     width: 100%;
     background: var(--cor-fundo);
     border-bottom: 2px solid var(--cor-borda);
-    position: fixed; /* Voltar */
-    z-index: 9999; /* Camadas */
+    position: fixed;
+    /* Voltar */
+    z-index: 9999;
+    /* Camadas */
     padding: .5rem 1rem;
 }
 
@@ -71,14 +80,16 @@ header {
 }
 
 /* NAV = UL // OL */
-.menu  {
-    display: flex; /* em linha // horizontal */
-    gap: 1rem; /* 16px */
+.menu {
+    display: flex;
+    /* em linha // horizontal */
+    gap: 1rem;
+    /* 16px */
     align-items: center;
 }
 
 /* LI = listas */
-.menu-item { 
+.menu-item {
     width: 100%;
 }
 
@@ -112,19 +123,22 @@ botao menu mobile  ----- */
     padding: 0.5rem;
 }
 
-.menu-mobile {  /* NAV */
+.menu-mobile {
+    /* NAV */
     position: fixed;
     top: 0;
     right: 0;
     background: var(--cor-fundo);
     width: 75%;
-    height: 100vh; /* viewPort Altura */
+    height: 100vh;
+    /* viewPort Altura */
     border-left: 1px solid var(--cor-borda);
     max-width: 320px;
     display: flex;
     flex-direction: column;
     padding-top: 4rem;
-    transition: .3s ease-in-out; /* voltar aqui */
+    transition: .3s ease-in-out;
+    /* voltar aqui */
     transform: translateX(100%);
 }
 
@@ -133,16 +147,21 @@ botao menu mobile  ----- */
     transform: translateX(0%);
 }
 
-.menu-mobile /* nav */
-.menu-list  /* UL */ {  
+.menu-mobile
+/* nav */
+.menu-list
+
+/* UL */
+    {
     display: flex;
-    flex-direction: column; /* EIXO Y = Vertical */
+    flex-direction: column;
+    /* EIXO Y = Vertical */
     gap: 1rem;
     width: 100%;
     padding: 1rem 1rem 2rem;
 }
 
-.menu-mobile .menu-item  {
+.menu-mobile .menu-item {
     width: 100%;
     text-align: center;
 }
@@ -154,8 +173,10 @@ botao menu mobile  ----- */
 }
 
 .logo {
-    width: 3.25rem; /* comprimento */
-    height: auto; /* altura */
+    width: 3.25rem;
+    /* comprimento */
+    height: auto;
+    /* altura */
 }
 
 .header-toggle {
@@ -170,6 +191,7 @@ botao menu mobile  ----- */
     flex-direction: column;
     gap: 1.5rem;
 }
+
 .main-content {
     display: flex;
     flex-direction: column;
@@ -178,15 +200,32 @@ botao menu mobile  ----- */
 
 h1 {
     font-size: 2.5rem;
+    font-family: "Roboto", sans-serif;
+}
+
+h2 {
+    font-family: "Crimson Text", serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.55rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    /* font-style: normal; */
 }
 
 .video iframe {
     aspect-ratio: 16/9;
 }
 
-#home, 
+#home,
 .projetos,
-.sobre, 
+.sobre,
 .contato {
     padding: 2.5rem 1rem;
 }
@@ -214,6 +253,7 @@ h1 {
     flex-direction: column;
     gap: 2rem;
 }
+
 .projetos-container {
     display: flex;
     flex-direction: column;
@@ -239,14 +279,31 @@ h1 {
     gap: 1rem;
 }
 
-.card-title {
-    color: ; /* Cor do Texto */
-    font-size: ; /* Tamanho texto */
-    font-weight: ; /* largura das letras */
-    font-family: ; /* Estilo das fontes */
+/* H3  */
+.card-titulo {
+    color: var(--cor-texto);
+    /* Cor do Texto */
+    font-size: 2rem;
+    /* Tamanho texto */
+    font-weight: 400;
+    /* largura das letras */
+    font-family: "Inter", sans-serif;
+    /* Estilo das fontes */
+    
 }
 
+.card-descricao {
+    color: var(--cor-texto);
+    font-family: "Inter", sans-serif;
+}
 
+.card-item {
+    margin-bottom: .8rem;
+}
+
+.card-item i {
+    margin-right: 8px;
+}
 
 
 
@@ -262,7 +319,8 @@ h1 {
 
     .menu-desktop {
         display: flex;
-        min-width: 30%; /* alinhar o logo */
+        min-width: 30%;
+        /* alinhar o logo */
     }
 
     .btn-menu-mobile {
@@ -270,7 +328,8 @@ h1 {
     }
 
     .header-toggle {
-        min-width: 30%; /* alinhar o logo */
+        min-width: 30%;
+        /* alinhar o logo */
     }
 
     header {
@@ -281,39 +340,64 @@ h1 {
         font-size: 5rem;
     }
 
-    #home, 
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    #home,
     .projetos,
     .sobre {
         padding: 8rem 6rem 4rem 6rem;
     }
-    
+
     .main-content {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
-} /* FIM min 768px */
+}
+
+/* FIM min 768px */
 
 @media (min-width: 992px) {
     .projeto-card {
         flex-direction: row;
     }
+
     .img-card {
         /* Tamanho das Fotos */
-        width: 55%;  
+        width: 55%;
     }
+
     .reverse-card {
         /* Espelhar */
         flex-direction: row-reverse;
     }
 
-    
-
 }
+
+@media (min-width: 1200px) {
+    h2 {
+        font-size: 4rem;
+    }
+}
+
 
 @media (min-width: 1400px) {
     h1 {
-      font-size: 6.5rem;  
+        font-size: 6.5rem;
+    }
+
+    h2 {
+        font-size: 4.5rem;
+    }
+
+    h3 {
+        font-size: 3.25rem;
     }
 
     .descricao-video,
@@ -323,5 +407,3 @@ h1 {
     }
 
 }
-
-
