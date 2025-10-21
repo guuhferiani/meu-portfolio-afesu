@@ -308,13 +308,14 @@ h3 {
 
 
 
-
-
-
-
-
-
 /* Medidas Responsivas */
+/* Telas Até 768 */
+@media (max-width: 768px) { 
+    #home {
+        padding-top: 5rem;
+    }
+}
+
 @media (min-width: 768px) {
 
     .menu-desktop {
