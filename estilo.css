@@ -13,6 +13,8 @@
 
     --cor-borda: #e9e9e9;
 
+    --cor-hover-icone: #1ec4f2;
+
 }
 
 /* Fundo Branco */
@@ -22,6 +24,8 @@
     --menu-link: #1b1b1b;
 
     --cor-borda: #1b1b1b;
+
+    --cor-hover-icone: #c62525;
 
 }
 
@@ -310,6 +314,18 @@ h3 {
     margin-right: 8px;
 }
 
+.card-item i:hover {
+    color: var(--cor-hover-icone);
+    transition: .5s ease-in-out;
+}
+
+.redes-sociais {
+    font-size: 1.4rem;
+}
+
+.redes-sociais i:hover {
+    color: var(--cor-hover-icone);
+}
 
 
 
@@ -357,7 +373,7 @@ h3 {
     #home,
     .projetos,
     .sobre {
-        padding: 8rem 6rem 4rem 6rem;
+        padding: 6rem 6rem 4rem 6rem;
     }
 
     .main-content {
