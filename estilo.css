@@ -327,6 +327,15 @@ h3 {
     color: var(--cor-hover-icone);
 }
 
+.col6 {
+    background: palevioletred;
+}
+
+.col5 {
+    background: #1ec4f2;
+}
+
+
 
 
 /* Medidas Responsivas */
