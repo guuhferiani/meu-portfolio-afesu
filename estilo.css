@@ -46,7 +46,8 @@ html[data-theme='light'] .logo {
 }
 
 html {
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
+    font-size: 62.5%;
 }
 
 body {
@@ -109,7 +110,7 @@ header {
 
 .menu-text {
     color: var(--menu-link);
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     text-transform: uppercase;
 }
 
@@ -182,7 +183,7 @@ botao menu mobile  ----- */
 }
 
 .logo {
-    width: 3.25rem;
+    width: 9.25rem;
     /* comprimento */
     height: auto;
     /* altura */
@@ -192,6 +193,7 @@ botao menu mobile  ----- */
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    font-size: 1.8rem;
 }
 
 #home {
@@ -205,6 +207,7 @@ botao menu mobile  ----- */
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    padding-top: 2.5rem;
 }
 
 h1 {
@@ -327,13 +330,31 @@ h3 {
     color: var(--cor-hover-icone);
 }
 
-.col6 {
-    background: palevioletred;
+/* Sobre */
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
-.col5 {
-    background: #1ec4f2;
+/* FOTO Rentangular */
+.sobre-logo {
+    width: 100%;
+    /* NAO PRECISA se for Quadrado */
+    aspect-ratio: 1 / 1; /* Ficar Quadrado */
+    object-fit: cover;
+    border-radius: 50%;
+    /* Borda com cor fixa 
+    border: 2px solid red; */
+    border: 2px solid var(--cor-borda);
 }
+
+.sobre-descricao p {
+    text-align: justify;
+    font-size: 1.8rem;
+}
+
 
 
 
