@@ -8,11 +8,11 @@
 :root,
 :root[data-theme='dark'] {
     --cor-fundo: #1b1b1b;
+    --cor-fundo-secundaria: #161616;
+
     --cor-texto: #e9e9e9;
     --menu-link: #e9e9e9;
-
     --cor-borda: #e9e9e9;
-
     --cor-hover-icone: #1ec4f2;
 
 }
@@ -20,20 +20,18 @@
 /* Fundo Branco */
 :root[data-theme='light'] {
     --cor-fundo: #e9e9e9;
+    --cor-fundo-secundaria: #d7d7d7;
+
     --cor-texto: #1b1b1b;
     --menu-link: #1b1b1b;
-
     --cor-borda: #1b1b1b;
-
     --cor-hover-icone: #c62525;
-
 }
 
 /* Inverter Cor LOGO = Filtro */
 html[data-theme='light'] .logo {
     filter: invert(1);
 }
-
 
 
 
@@ -183,7 +181,7 @@ botao menu mobile  ----- */
 }
 
 .logo {
-    width: 9.25rem;
+    width: 4.25rem;
     /* comprimento */
     height: auto;
     /* altura */
@@ -211,17 +209,17 @@ botao menu mobile  ----- */
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem; /* igual 35px */
     font-family: "Roboto", sans-serif;
 }
 
 h2 {
     font-family: "Crimson Text", serif;
-    font-size: 2rem;
+    font-size: 2.8rem;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 2px;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 h3 {
@@ -229,6 +227,10 @@ h3 {
     font-family: "Roboto", sans-serif;
     font-weight: bold;
     /* font-style: normal; */
+}
+
+p {
+   font-size: 1.8rem; /* igual a 18px */
 }
 
 .video iframe {
@@ -253,7 +255,7 @@ h3 {
 }
 
 .descricao-video h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     text-transform: uppercase;
     margin-top: -2rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -295,7 +297,7 @@ h3 {
 .card-titulo {
     color: var(--cor-texto);
     /* Cor do Texto */
-    font-size: 2rem;
+    font-size: 2.4rem;
     /* Tamanho texto */
     font-weight: 400;
     /* largura das letras */
@@ -311,10 +313,12 @@ h3 {
 
 .card-item {
     margin-bottom: .8rem;
+    font-size: 1.6rem;
 }
 
 .card-item i {
     margin-right: 8px;
+    font-size: 1.9rem;
 }
 
 .card-item i:hover {
@@ -323,7 +327,7 @@ h3 {
 }
 
 .redes-sociais {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
 }
 
 .redes-sociais i:hover {
@@ -356,7 +360,30 @@ h3 {
 }
 
 
+/* Footer */
+footer {
+    background: var(--cor-fundo-secundaria);
+    border-top: 1px solid var(--cor-borda);
+}
 
+footer p {
+    padding: 1.2rem 6rem;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+}
+
+footer i {
+    color: #1ec4f2;
+}
+
+footer a {
+    color: var(--menu-link);
+}
+
+footer a:hover {
+    color: #1ec4f2;
+    transition: all 0.3s ease-in-out;
+}
 
 
 /* Medidas Responsivas */
@@ -389,15 +416,15 @@ h3 {
     }
 
     h1 {
-        font-size: 5rem;
+        font-size: 5.2rem;
     }
 
     h2 {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
     h3 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     #home,
@@ -416,6 +443,11 @@ h3 {
 /* FIM min 768px */
 
 @media (min-width: 992px) {
+
+    p {
+        font-size: 1.8rem;
+    }
+
     .projeto-card {
         flex-direction: row;
     }
@@ -434,22 +466,22 @@ h3 {
 
 @media (min-width: 1200px) {
     h2 {
-        font-size: 4rem;
+        font-size: 4.5rem;
     }
 }
 
 
 @media (min-width: 1400px) {
     h1 {
-        font-size: 6.5rem;
+        font-size: 7.5rem;
     }
 
     h2 {
-        font-size: 4.5rem;
+        font-size: 5.5rem;
     }
 
     h3 {
-        font-size: 3.25rem;
+        font-size: 4rem;
     }
 
     .descricao-video,
@@ -457,5 +489,4 @@ h3 {
     .sobre {
         padding: 10rem 15rem 4rem;
     }
-
 }
